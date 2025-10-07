@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Integer> numbers = new ArrayList<>();
+        System.out.println("Enter integers separated by space:");
+        String input = sc.nextLine();
+        String[] inputs = input.split(" ");
+        for (String str : inputs) {
+            int num = Integer.parseInt(str);
+            numbers.add(num);
+        }
+        int sum = 0;
+        for (Integer n : numbers) {
+            sum += n;
+        }
+        System.out.println("The total sum is: " + sum);
+    }
+}
